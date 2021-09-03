@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GothamBook';
+    src: url(../fonts/GothamBookRegular.otf),format('opentype');
+}
+@font-face {
+    font-family: 'GothamMedium';
+    src: url(../fonts/GothamMedium.otf),format('opentype');
+}
+body{
+    font-family: 'GothamMedium',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+.left img{
+   margin-left: 30px;
+}
+header ul, header li{
+    list-style: none;
+    display: flex;
+    margin: 0 10px;
+}
+.middle a, .right a{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 550;
+}
+.right img{
+    cursor: pointer;
+}
