@@ -38,11 +38,16 @@ header ul, header li{
     display: flex;
     margin: 0 10px;
 }
-.middle a, .right a{
+.middle a, .right li a{
     color: black;
     text-transform: uppercase;
     text-decoration: none;
-    
+    border-radius: 10px;
+    transition: 500ms;
+    padding: 2px 10px;
+}
+.middle a:hover, .right a:hover{
+    background-color: #C3CFDD;
 }
 .right img{
     cursor: pointer;
@@ -51,8 +56,8 @@ header ul, header li{
 /*MAIN*/
 main{
     background-image: url(../images/bg.jpg);
-    background-position: center;
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 .info{
@@ -130,4 +135,24 @@ footer .flecha-area{
     animation-name: down;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+}
+/*Media queries*/
+@media(max-width:1200px){
+    .middle, .right li a {
+        display: none;
+    }
+    .menu_btn{
+        margin-right: 20px;
+    }
+}
+@media(max-width:640px){
+    .botoes-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .botoes-area a{
+        margin: 10px 20px;
+        width: calc(100vw - 60px);
+        
+    }
 }
