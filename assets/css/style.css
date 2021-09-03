@@ -77,3 +77,57 @@ main{
 .info h2 a{
     color: var(--h1-cor);
 }
+/*FOOTER*/
+footer{
+   position: fixed;
+   bottom: 30px;
+   right: 0;
+   left: 0;
+}
+footer .botoes-area{
+    display: flex;
+    justify-content: center;
+    
+}
+footer .botoes-area a{
+    display: block;
+    text-decoration: none;
+    width: 220px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+footer .dark-btn {
+    background-color: var(--btn-dark-bg);
+    color: white;
+}
+footer .light-btn{
+    background-color: var(--btn-light-bg);
+    color: black;
+}
+@keyframes down{
+    0%{
+        margin: 0;
+    }
+    50%{
+        margin: 15px;
+    }
+    100%{
+        margin: 0;
+    }
+}
+footer .flecha-area{
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.flecha-area img{
+    height: 15px;
+    animation-name: down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
